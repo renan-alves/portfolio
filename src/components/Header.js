@@ -9,7 +9,7 @@ export default class Header extends React.Component{
                     <img src="./logo192.png" className="header-logo"></img>
                     <div className="header-searchbox">
                         www.linkedin.com/in/renan-aac
-                        <img src="./search-icon.png" alt="16px" width="16px" className="header-searchicon"></img>
+                        <img src="./search-icon.png" className="header-searchicon"></img>
                     </div>
                     </div>
                 <div className="header-social">

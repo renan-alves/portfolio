@@ -12,6 +12,7 @@ body, html {
 }
 
 //HEADER
+
 .header{
     display: flex;
     flex-flow: row;
@@ -71,6 +72,110 @@ body, html {
     border: 1px solid lightgray
 }
 
+.header-searchicon{
+    justify-self: flex-end;
+    height: 16px;
+    width: 16px;
+}
+
+.header-social{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px){
+
+    .header{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 43px;
+        background-color: #4267B2;
+        padding: 0 50px;
+    }
+    
+    .header-searchbox{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        border: solid 1px lightgray;
+        border-radius: 3px;
+        background-color: white;
+        min-width: 268px;
+        height: 26px;
+        padding: 0 16px 0 8px;
+    }
+    
+    .header-curriculum{
+        display: flex;
+        flex-flow: row; 
+        align-items: center;
+        background-color: white;
+        height: 30px;
+        padding: 0 8px;
+        border-radius: 3px;
+        border: 1px solid lightgray
+    }
+}
+
+@media (max-width: 900px){
+    .header-searchbox{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        border: solid 1px lightgray;
+        border-radius: 3px;
+        background-color: white;
+        max-width: 268px;
+        height: 26px;
+        padding: 0 16px 0 8px;
+    }
+
+    .header{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 43px;
+        background-color: #4267B2;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .header{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 43px;
+        background-color: #4267B2;
+    }
+
+    .header-logo{
+        width: 24px;
+        height: 24px;
+        margin: 0px;
+    }
+
+    .header-box{
+        width: 24px;
+    }
+
+    .header-searchbox{
+        visibility: hidden;
+    }
+}
+
 //PROFILE
 
 .profile{
@@ -103,3 +208,80 @@ body, html {
     left: 423px
 }
 
+@media (max-width: 1200px){
+    
+    .profile-background{ 
+        height: 255px;
+        background-color: lightskyblue;
+    }
+    
+    .profile-picture{
+        position: absolute;
+        top: -140px;
+        left: 50px;
+        width: 186px;
+        height: 186px;;
+        border: 6px solid black;
+        border-radius: 100%;
+        background-color: gray;
+    }
+    
+    .profile-name{
+        position: absolute;
+        top: -80px;
+        left: 264px
+    }
+}
+
+@media (max-width: 900px){
+
+    .profile-picture{
+        position: absolute;
+        top: -110px;
+        left: 30px;
+        width: 146px;
+        height: 146px;;
+        border: 4px solid black;
+        border-radius: 100%;
+        background-color: gray;
+    }
+    
+    .profile-name{
+        position: absolute;
+        top: -80px;
+        left: 204px
+    }
+
+    .profile-name h1{
+        font-size: 4vw;
+    }
+
+    .profile-name h2{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 600px){
+
+    .profile-background{ 
+        height: 125px;
+        background-color: lightskyblue;
+    }
+
+    .profile-picture{
+        position: absolute;
+        top: -65px;
+        left: 15px;
+        width: 90px;
+        height: 90px;;
+        border: 2px solid black;
+        border-radius: 100%;
+        background-color: gray;
+    }
+
+    .profile-name{
+        position: absolute;
+        top: -50px;
+        left: 114px
+    }
+}
