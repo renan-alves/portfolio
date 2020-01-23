@@ -8,7 +8,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #F2F3F5;
+    background-color: darkcyan;
 }
 
 //HEADER
@@ -283,13 +283,19 @@ body, html {
 }
 
 //CONTENT
+.content-box{
+    background-color: #f1f1f1;
+    background-color: lightskyblue;
+    margin: 50px 100px
+}
+
 .content{
     display: flex;
     flex-flow: row;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    margin-left: 391px;
 }
 
 .content div{
@@ -301,16 +307,17 @@ body, html {
     font-size: 18px;
 }
 
+.content div:hover{
+    border-bottom: 1px solid black;
+    background-color: rgb(172, 221, 252);
+}
+
 .content div:nth-child(even){
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 
 @media (max-width: 1200px){
-
-    .content{
-        margin-left: 236px;
-    }
 
     .content div{
         font-size: 16px;
@@ -320,20 +327,17 @@ body, html {
 
 @media (max-width: 900px){
 
-    .content{
-        margin-left: 176px;
-    }
     
 }
 
 @media (max-width: 600px){
 
-    .content{
-        margin-left: 105px;
+    .content-box{
+        margin: 25px 36px;
     }
 
     .content div{
-        font-size: 3vw;
+        font-size: 11px;
     }
     
 }
