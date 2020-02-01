@@ -8,7 +8,9 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: darkcyan;
+    -webkit-font-smoothing:antialiased !important;
+    text-shadow:1px 1px 1px 1px rgba(0,0,0,0.005);
+    background-color: #efefef;
 }
 
 //HEADER
@@ -20,7 +22,8 @@ body, html {
     justify-content: space-between;
     width: 100%;
     height: 43px;
-    background-color: #4267B2;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 90%, rgba(182,182,182,1) 100%);
     padding: 0 205px;
 }
 
@@ -95,7 +98,6 @@ body, html {
         justify-content: space-between;
         width: 100%;
         height: 43px;
-        background-color: #4267B2;
         padding: 0 50px;
     }
     
@@ -145,7 +147,6 @@ body, html {
         justify-content: space-between;
         width: 100%;
         height: 43px;
-        background-color: #4267B2;
         padding: 0 20px;
     }
 }
@@ -158,7 +159,6 @@ body, html {
         justify-content: space-between;
         width: 100%;
         height: 43px;
-        background-color: #4267B2;
     }
 
     .header-logo{
@@ -180,7 +180,8 @@ body, html {
 
 .profile-background{ 
     height: 315px;
-    background-color: lightskyblue;
+    background: rgb(255,59,63);
+    background: linear-gradient(315deg, rgba(255,59,63,1) 48%, rgba(182,182,182,1) 100%);
 }
 
 .profile-picture-container{
@@ -193,7 +194,7 @@ body, html {
     left: 205px;
     width: 186px;
     height: 186px;;
-    border: 8px solid black;
+    border: 3px solid #a9a9a9;
     border-radius: 100%;
     background-color: gray;
 }
@@ -208,7 +209,6 @@ body, html {
     
     .profile-background{ 
         height: 255px;
-        background-color: lightskyblue;
     }
     
     .profile-picture{
@@ -261,7 +261,6 @@ body, html {
 
     .profile-background{ 
         height: 125px;
-        background-color: lightskyblue;
     }
 
     .profile-picture{
@@ -284,8 +283,6 @@ body, html {
 
 //CONTENT
 .content-box{
-    background-color: #f1f1f1;
-    background-color: lightskyblue;
     margin: 50px 100px
 }
 
@@ -296,6 +293,8 @@ body, html {
     justify-content: space-around;
     align-items: center;
     height: 50px;
+    background: rgb(239,239,239);
+    background: linear-gradient(180deg, rgba(239,239,239,1) 80%, rgba(182,182,182,1) 100%);
 }
 
 .content div{
@@ -309,7 +308,7 @@ body, html {
 
 .content div:hover{
     border-bottom: 1px solid black;
-    background-color: rgb(172, 221, 252);
+    background-color: #ff3b3e85;
 }
 
 .content div:nth-child(even){
@@ -339,5 +338,38 @@ body, html {
     .content div{
         font-size: 11px;
     }
-    
+}
+
+//Cards
+
+.card-container{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid black;
+    height: auto;
+}
+
+.card-title{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-content{
+    display: flex;
+    flex-flow: row;
+    margin: 5px;
+    align-items: center;
+}
+
+.card-image{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 1Px black solid;
+}
+
+.card-text{
+    display: flex;
+    flex: 1;
+    margin: 5px;
 }

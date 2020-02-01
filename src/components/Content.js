@@ -1,4 +1,5 @@
 import React from 'react';
+import Cards from './Cards';
 
 export default class Content extends React.Component{
 
@@ -24,12 +25,7 @@ export default class Content extends React.Component{
 
     showContent = (option) =>{
 
-        switch(option){
-            case 1: return(<div>Não Tenho formação</div>)
-            case 2: return(<div>Não sou competente</div>)
-            case 3: return(<div>nâo tenho experiencia</div>)
-        }
-        
+        return(<Cards category="formation" index={this.state.currentOption} />)
     }
 
     render(){
