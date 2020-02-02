@@ -1,5 +1,8 @@
 import React from 'react';
 import Cards from './Cards';
+import ContentFormationList from "./ContentLists/content_formation";
+import ContentSkillsList from "./ContentLists/content_skills";
+import ContentExperienceList from "./ContentLists/content_experience";
 
 export default class Content extends React.Component{
 
@@ -24,8 +27,27 @@ export default class Content extends React.Component{
     }
 
     showContent = (option) =>{
-
-        return(<Cards category="formation" index={this.state.currentOption} />)
+        
+        switch(option){
+            case 1: return(ContentFormationList.map((item, key) => {
+                return(
+                    <Cards content={item} index={this.state.currentOption} />
+                )
+            }));
+            case 2: return(ContentSkillsList.map((item, key) => {
+                return(
+                    <Cards content={item} index={this.state.currentOption} />
+                )
+            }));
+            case 3: return(ContentExperienceList.map((item, key) => {
+                return(
+                    <Cards content={item} index={this.state.currentOption} />
+                )
+            }));
+            
+        
+            // case 3: return(<Cards category="experience" index={this.state.currentOption} />)
+        }
     }
 
     render(){

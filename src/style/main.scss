@@ -345,8 +345,8 @@ body, html {
 .card-container{
     display: flex;
     flex-flow: column;
-    border: 1px solid black;
     height: auto;
+    margin-top: 5px;
 }
 
 .card-title{
@@ -365,7 +365,6 @@ body, html {
     display: flex;
     width: 100px;
     height: 100px;
-    border: 1Px black solid;
 }
 
 .card-text{
