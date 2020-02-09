@@ -13,5 +13,10 @@
         "title" : "Conhecimento 3",
         "image" : "./logo512.png",
         "text" : "Deserunt duis in non culpa aliqua ullamco eu enim dolor voluptate laboris qui commodo."
+    },
+    {
+        "title" : "Conhecimento 4",
+        "image" : "./logo512.png",
+        "text" : "Deserunt duis in non culpa aliqua ullamco eu enim dolor voluptate laboris qui commodo."
     }
 ]

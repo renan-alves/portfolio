@@ -297,7 +297,11 @@ body, html {
     background: linear-gradient(180deg, rgba(239,239,239,1) 80%, rgba(182,182,182,1) 100%);
 }
 
-.content div{
+.content input{
+    visibility:hidden;
+}
+
+.content label{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,19 +310,14 @@ body, html {
     font-size: 18px;
 }
 
-.content div:hover{
+.content label:hover{
     border-bottom: 1px solid black;
     background-color: #ff3b3e85;
 }
 
-.content div:nth-child(even){
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
 @media (max-width: 1200px){
 
-    .content div{
+    .content label{
         font-size: 16px;
     }
     
@@ -326,7 +325,7 @@ body, html {
 
 @media (max-width: 900px){
 
-    
+     
 }
 
 @media (max-width: 600px){
